@@ -17,7 +17,7 @@ type Props = {
   onTextInputChange?: (event: any) => void;
 }
 
-function Sender({ sendMessage, placeholder, disabledInput, autofocus, onTextInputChange, buttonAlt }: Props) {
+function Sender({ sendMessage, placeholder, disabledInput, autofocus, value, onTextInputChange, buttonAlt }: Props) {
   const showChat = useSelector((state: GlobalState) => state.behavior.showChat);
   const inputRef = useRef(null);
   // @ts-ignore
