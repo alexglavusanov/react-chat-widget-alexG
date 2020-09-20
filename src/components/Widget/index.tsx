@@ -7,6 +7,7 @@ import { AnyFunction } from '../../utils/types';
 import WidgetLayout from './layout';
 
 type Props = {
+  senderInputValue: string;
   title: string;
   titleAvatar?: string;
   subtitle: string;
@@ -78,6 +79,7 @@ function Widget({
 
   return (
     <WidgetLayout
+      senderInputValue={senderInputValue}
       onToggleConversation={toggleConversation}
       onSendMessage={handleMessageSubmit}
       onQuickButtonClicked={onQuickButtonClicked}
