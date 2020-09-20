@@ -13,6 +13,7 @@ import FullScreenPreview from './components/FullScreenPreview';
 import './style.scss';
 
 type Props = {
+  senderInputValue: string;
   title: string;
   titleAvatar?: string;
   subtitle: string;
@@ -36,6 +37,7 @@ type Props = {
 }
 
 function WidgetLayout({
+  senderInputValue,
   title,
   titleAvatar,
   subtitle,
@@ -117,6 +119,7 @@ function WidgetLayout({
       {showChat &&
         <Conversation
           title={title}
+          senderInputValue={senderInputValue}
           subtitle={subtitle}
           sendMessage={onSendMessage}
           senderPlaceHolder={senderPlaceHolder}
