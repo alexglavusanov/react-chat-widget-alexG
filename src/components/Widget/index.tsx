@@ -33,6 +33,7 @@ type Props = {
 function Widget({
   title,
   titleAvatar,
+  senderInputValue,
   subtitle,
   senderPlaceHolder,
   profileAvatar,
