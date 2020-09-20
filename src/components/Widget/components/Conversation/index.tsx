@@ -32,6 +32,7 @@ type Props = {
 function Conversation({
   title,
   subtitle,
+  senderInputValue,
   senderPlaceHolder,
   showCloseButton,
   disabledInput,
