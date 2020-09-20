@@ -10,6 +10,7 @@ import './style.scss';
 type Props = {
   placeholder: string;
   disabledInput: boolean;
+  value: string;
   autofocus: boolean;
   sendMessage: (event: any) => void;
   buttonAlt: string;
@@ -25,6 +26,7 @@ function Sender({ sendMessage, placeholder, disabledInput, autofocus, onTextInpu
   return (
     <form className="rcw-sender" onSubmit={sendMessage}>
       <input
+        value={value}
         type="text"
         className="rcw-new-message"
         name="message"
