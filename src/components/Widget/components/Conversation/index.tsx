@@ -11,6 +11,7 @@ import { AnyFunction } from '../../../../utils/types';
 import './style.scss';
 
 type Props = {
+  senderInputValue: string;
   title: string;
   subtitle: string;
   senderPlaceHolder: string;
@@ -57,6 +58,7 @@ function Conversation({
       <Messages profileAvatar={profileAvatar} showTimeStamp={showTimeStamp} />
       <QuickButtons onQuickButtonClicked={onQuickButtonClicked} />
       <Sender
+        value={senderInputValue}
         sendMessage={sendMessage}
         placeholder={senderPlaceHolder}
         disabledInput={disabledInput}
